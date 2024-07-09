@@ -11,7 +11,6 @@ struct CustomWorker;
 impl Worker for CustomWorker {
     async fn process_checkpoint(&self, checkpoint: CheckpointData) -> Result<()> {
         // custom processing logic
-        //         ...
         // print out the checkpoint number
         println!("Processing checkpoint: {}", checkpoint.checkpoint_summary.to_string());
         Ok(())
